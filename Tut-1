@@ -12,3 +12,27 @@ But if you want to use jdk-21 then run this command----
 
 sudo apt install openjdk-21-jdk
 
+After that Run the below commands to install jenkins
+sudo wget -O /usr/share/keyrings/jenkins-keyring.asc   https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
+echo "deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]"   https://pkg.jenkins.io/debian-stable binary/ | sudo tee   /etc/apt/sources.list.d/jenkins.list > /dev/null
+sudo apt-get update
+sudo apt-get install jenkins
+apt update
+--To check status of jenkins
+systemctl --full status jenkins
+
+Now I want to change some configuration in jenkins
+
+systemctl stop jenkins
+systemctl --full status jenkins
+
+To set vim editor run the below commans
+update-alternatives --config editor
+select 3 
+
+To change configuration run the below command---
+systemctl edit jenkins
+
+
+
+
