@@ -1,0 +1,9 @@
+First We need to start Ubuntu VM.
+
+We need to install jdk and jre into ubuntu by following command---
+
+sudo su update
+sudo apt install default-jre
+java -version
+sudo apt install default-jdk
+javac -version
